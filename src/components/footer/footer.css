@@ -1,0 +1,27 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #0070ff;
+    text-align: center;
+}
+
+.footer-info {
+    padding: 0.25rem;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-info-bottom {
+    padding-top: 0;
+}
+
+@media (min-width:700px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0.5rem;
+    }
+    .footer-info-bottom {
+        padding-top: 0.25rem;
+    }
+}

@@ -1,0 +1,107 @@
+.grid-note {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 280px;
+    margin: 1rem auto 1rem auto;
+    background: lightblue;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+    padding: 0.5rem;
+}
+
+.grid-note-author {
+    cursor: pointer;
+    padding: 0 0.5rem 0.5rem 0.5rem;
+    text-decoration: underline;
+}
+
+.grid-note-content {
+    line-height: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+    margin-top: 1rem;
+    word-wrap: break-word;
+}
+
+.grid-note-Easy {
+    padding: 0.25rem 0.5rem;
+    width: 80px;
+    background-color: white;
+    border-radius: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.grid-note-Medium {
+    padding: 0.25rem 0.5rem;
+    width: 80px;
+    background-color: white;
+    color: #0070ff;
+    border-radius: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.grid-note-Hard {
+    padding: 0.25rem 0.5rem;
+    width: 80px;
+    background-color: white;
+    color: red;
+    border-radius: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.grid-note-title {
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.gridnote-edit-button {
+    width: 60px;
+    border: none;
+    background-color: lightgray;
+    padding: 0.25rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.gridnote-edit-button:hover,
+.gridnote-edit-button:focus-within {
+    background-color: white;
+    color: #0070ff;
+}
+
+.gridnote-delete-button {
+    width: 60px;
+    border: none;
+    background-color: lightgray;
+    padding: 0.25rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+
+.gridnote-delete-button:hover,
+.gridnote-delete-button:focus-within {
+    background-color: white;
+    color: red;
+}
+
+.gridnote-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+@media (min-width:600px) {
+    .grid-note {
+        grid-column: span 3;
+    }
+}

@@ -1,0 +1,103 @@
+.addnote-page {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    width: 90%;
+}
+
+.add-form-title {
+    margin-bottom: 2rem;
+    color: #0070ff;
+}
+
+.add-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding: 0.6rem;
+    margin-bottom: 3rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+
+.form-row-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.form-radio-input {
+    margin-left: 0.5rem;
+}
+
+.addnote-form-label {
+    margin-left: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.normal-input {
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    resize: none;
+}
+
+.addnote-submit-button {
+    position: absolute;
+    right: 2rem;
+    bottom: -1rem;
+    padding: 0.5rem;
+    background-color: #0070ff;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.addnote-submit-button:hover,
+.addnote-submit-button:focus-within {
+    background-color: white;
+    color: #0070ff;
+    border: 1px solid #0070ff;
+    transform: scale(1.2);
+}
+
+.add-goback-button {
+    padding: 0.5rem;
+    color: white;
+    background-color: #6699cc;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.add-goback-button:hover,
+.add-goback-button:focus-within {
+    text-decoration: underline;
+}
+
+.form-error {
+    color: red;
+    padding: 0.5rem 0;
+}
+
+@media (min-width: 800px) {
+    .add-form {
+        width: 600px;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .addnote-submit-button {
+        transition: all 0.5s ease-in-out;
+    }
+}

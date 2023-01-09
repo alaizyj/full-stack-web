@@ -1,0 +1,133 @@
+.notes-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.notes-topbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.notes-topbar-add {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.notes-view-title {
+    color: #0070ff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.mynotes-button {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #6699cc;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.mynotes-button:hover,
+.mynotes-button:focus-within {
+    text-decoration: underline;
+}
+
+.addnote-button {
+    padding: 0.5rem;
+    color: white;
+    background-color: #0070ff;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.addnote-button:hover,
+.addnote-button:focus-within {
+    text-decoration: underline;
+}
+
+.goback-button {
+    margin-left: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #6699cc;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.goback-button:hover,
+.goback-button:focus-within {
+    text-decoration: underline;
+}
+
+.notes-view-buttons {
+    /* margin-right: 0.5rem; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.notes-view-button {
+    padding: 0.5rem 0.25rem;
+    margin-left: 0.5rem;
+    background-color: lightblue;
+    border: none;
+    border-radius: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 60px;
+}
+
+.notes-view-button.chosen-view {
+    color: white;
+    background-color: #0070ff;
+}
+
+.grid-notes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.empty-notes-message {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+@media (min-width:600px) {
+    .grid-notes {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1rem
+    }
+}
+
+@media (min-width:900px) {
+    .grid-notes {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        gap: 1rem
+    }
+}
+
+@media (min-width:1324px) {
+    .grid-notes {
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
